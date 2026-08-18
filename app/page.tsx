@@ -15,7 +15,6 @@ export default function Home() {
       <ProjectsSection />
       <StatsSection />
       <EventsSection />
-      <Footer />
     </main>
   );
 }

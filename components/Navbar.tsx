@@ -22,7 +22,7 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Brand Logo */}
         <Link href="/" className="text-2xl font-black tracking-tight text-slate-900">
-          Avenia Care Foundation<span className="italic font-serif font-normal">i</span>
+          Avenia Care Foundation
         </Link>
 
         {/* Desktop Navigation */}

@@ -7,8 +7,8 @@ import { Footer } from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "largerthani | Inclusive care for children with special needs",
-  description: "NGO platform supporting and empowering children with special needs.",
+  title: "Avenia Care Foundation (ACF) | Inclusive Care for Children with Special Needs",
+  description: "Non-governmental organization dedicated to empowering and providing inclusive care, community support, and resources for children with special needs.",
 };
 
 export default function RootLayout({
@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
