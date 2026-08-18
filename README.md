@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Larger Than I — NGO & Community Support Platform
 
-## Getting Started
+A modern, accessible, and responsive web platform engineered for **Larger Than I**, a non-governmental organization dedicated to providing inclusive care, community support, and resources for children with special needs.
 
-First, run the development server:
+---
 
-```bash
+## 🚀 Key Features
+
+* **Dynamic Subpage Routing**: Optimized Next.js App Router structure handling dynamic `[id]` paths for individual projects and events smoothly.
+* **Interactive Volunteer & Donation Portals**: Built-in modal dialogs and dedicated workflows to boost community engagement and support.
+* **Responsive Modern UI**: Styled using Tailwind CSS with clean micro-interactions, responsive grids, and accessible components.
+* **Event & Impact Tracking**: Dynamic showcases for ongoing campaigns, community milestones, awards, and key metrics.
+
+---
+
+## 🛠️ Tech Stack
+
+* **Framework**: [Next.js](https://nextjs.org/) (App Router, React 18+)
+* **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+* **Icons & Assets**: Custom SVG Icons & Next.js `Image` optimization
+* **Language**: TypeScript
+
+---
+
+## 📁 Project Structure
+
+```text
+├── app/
+│   ├── about/          # About page & team showcase
+│   ├── events/
+│   │   └── [id]/       # Dynamic event details page
+│   ├── projects/
+│   │   └── [id]/       # Dynamic project showcase page
+│   ├── donate/         # Donation workflow page
+│   ├── contact/        # Contact form page
+│   └── layout.tsx      # Root layout & global providers
+├── components/
+│   ├── AnimatedSection.tsx
+│   ├── Footer.tsx
+│   ├── Navbar.tsx
+│   └── VolunteerModal.tsx
+├── public/             # Static images and assets
+└── README.md
+🏁 Getting Started Locally
+Prerequisites
+Ensure you have Node.js (v18+) and npm/yarn installed.
+
+Installation
+Clone the repository:
+
+Bash
+git clone [https://github.com/your-username/larger-than-i.git](https://github.com/your-username/larger-than-i.git)
+cd larger-than-i
+Install dependencies:
+
+Bash
+npm install
+Run the development server:
+
+Bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Access the application:
+Open http://localhost:3000 in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+⚡ Key Scripts
+npm run dev — Starts the local Next.js development server.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+npm run build — Generates an optimized production build.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+npm run start — Runs the compiled production server.
 
-## Learn More
+npm run lint — Runs ESLint checks across the project codebase.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📄 License
+Distributed under the MIT License. See LICENSE for details.
