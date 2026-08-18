@@ -7,18 +7,22 @@ A modern, accessible, and responsive web platform engineered for **Larger Than I
 ## 🚀 Key Features
 
 * **Dynamic Subpage Routing**: Optimized Next.js App Router structure handling dynamic `[id]` paths for individual projects and events smoothly.
-* **Interactive Volunteer & Donation Portals**: Built-in modal dialogs and dedicated workflows to boost community engagement and support.
-* **Responsive Modern UI**: Styled using Tailwind CSS with clean micro-interactions, responsive grids, and accessible components.
+* **Seamless Payment Processing**: Integrated Paystack gateway supporting secure online donations and recurring contribution workflows.
+* **Smooth Micro-Animations**: Interactive scroll animations and fluid transitions powered by Framer Motion.
+* **Interactive Volunteer & Support Portals**: Built-in modal dialogs and dedicated workflows to boost community engagement and support.
+* **Responsive Modern UI**: Styled using Tailwind CSS with clean layout structures, responsive grids, and accessible components.
 * **Event & Impact Tracking**: Dynamic showcases for ongoing campaigns, community milestones, awards, and key metrics.
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Framework**: [Next.js](https://nextjs.org/) (App Router, React 18+)
-* **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-* **Icons & Assets**: Custom SVG Icons & Next.js `Image` optimization
+* **Framework**: [Next.js](https://nextjs.org/) (App Router, React 19 / 18)
 * **Language**: TypeScript
+* **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+* **Animations**: [Framer Motion](https://www.framer.com/motion/)
+* **Payment Integration**: [Paystack Inline JS / SDK](https://paystack.com/)
+* **Icons & Assets**: [Lucide React](https://lucide.dev/) / Custom SVGs & Next.js `Image` Optimization
 
 ---
 
@@ -31,11 +35,11 @@ A modern, accessible, and responsive web platform engineered for **Larger Than I
 │   │   └── [id]/       # Dynamic event details page
 │   ├── projects/
 │   │   └── [id]/       # Dynamic project showcase page
-│   ├── donate/         # Donation workflow page
+│   ├── donate/         # Donation workflow & Paystack payment integration
 │   ├── contact/        # Contact form page
 │   └── layout.tsx      # Root layout & global providers
 ├── components/
-│   ├── AnimatedSection.tsx
+│   ├── AnimatedSection.tsx  # Framer Motion wrapper components
 │   ├── Footer.tsx
 │   ├── Navbar.tsx
 │   └── VolunteerModal.tsx
@@ -43,7 +47,7 @@ A modern, accessible, and responsive web platform engineered for **Larger Than I
 └── README.md
 🏁 Getting Started Locally
 Prerequisites
-Ensure you have Node.js (v18+) and npm/yarn installed.
+Ensure you have Node.js (v18+) and npm or yarn installed.
 
 Installation
 Clone the repository:
@@ -55,6 +59,11 @@ Install dependencies:
 
 Bash
 npm install
+Configure Environment Variables:
+Create a .env.local file in the root directory and add your Paystack key:
+
+Code snippet
+NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY=pk_test_xxxxxxxxxxxxxxxxxxxxxxxx
 Run the development server:
 
 Bash
