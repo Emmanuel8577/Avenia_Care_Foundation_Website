@@ -11,6 +11,7 @@ export const StatsSection = () => {
     { color: "bg-[#FFDAC1]", label: "10% helping people" },
     { color: "bg-[#E2F0CB]", label: "10% excursions" },
     { color: "bg-[#FFB7B2]", label: "5% feeding the poor" },
+    
   ];
 
   return (

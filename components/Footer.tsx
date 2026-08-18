@@ -18,7 +18,7 @@ export const Footer = () => {
           {/* Logo / Brand Name */}
           <div className="lg:col-span-3">
             <Link href="/" className="text-2xl font-extrabold tracking-tight">
-              largerthan<span className="italic font-normal">i</span>
+              Avenia Care Foundation<span className="italic font-normal">i</span>
             </Link>
           </div>
 
